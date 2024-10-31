@@ -1,0 +1,98 @@
+main {
+    display: flex;
+    flex-direction: column;
+}
+
+.contenedorFotosControles {
+    display: flex;
+    flex-direction: row;
+}
+
+
+.contenedorCamiseta img {
+    width: 85%;
+}
+
+.contenedorControles controles {
+    max-width: 20px;
+}
+
+.contenedorFotos {
+    /* border: 1px rgb(14, 90, 128) solid; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+    background-color: rgb(35, 43, 51);
+    border-radius: 20px;
+    width: auto;
+    max-width: 690px;
+}
+
+.contenedorFotos img {
+    width: 15%;
+    margin: 4px;
+}
+
+.fondo {
+    background-color: rgb(53, 64, 74);
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 400px;
+}
+
+#camiseta {
+    position: relative;
+}
+
+.copiado {
+    position: absolute;
+    width: 15%;
+    height: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.letra {
+    left:420px;
+    top: 300px;
+    position: absolute;
+    width: 8%;
+    height: 5%;
+}
+.copiadoReves {
+    left:540px;
+    top: 300px;
+    position: absolute;
+    width: 4%;
+    height: 5%;
+}
+
+.imgCopiada {
+    max-width: 100%;
+    max-height: 100%;
+    position: absolute;
+}
+
+.imgCopiadaR {
+    max-width: 100%;
+    max-height: 100%;
+    position: absolute;
+    transform: scaleX(-1);
+}
+
+#controles {
+    max-width: 350px;
+    display: flex;
+    justify-content: center;
+    max-height: 400px;
+    flex-direction: column;
+    background-color: rgb(35, 43, 51);
+    border-radius: 20px;
+}
+.margenPersonalizado{
+    margin-left: 26px;
+}

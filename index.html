@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CreaCamisetas</title>
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <script src="js/script.js" defer></script>
+    <script src="js/bootstrap.bundle.js"></script>
+
+
+</head>
+
+<body class="text-light bg-dark">
+    <h1 class="mb-5 mt-5 text-center">¡Crea tu camiseta personalizada!</h1>
+    <main class="container d-flex flex-column align-items-center gap-3">
+        <div class="mt-5 contenedorFotosControles mb-4 gap-5 d-flex justify-content-center align-items-center">
+            <!-- DIV QUE CONTIENE LA CAMISETA Y EL DIV DE ARRASTRE -->
+            <div id="principal" class="fondo">
+                <img id="camiseta" class="img-fluid" src="img/black.png" alt="">
+                <div class="copiado" id="divCopiar"></div>
+                <div class="letra" id="letra">
+                    <p id="textoCamiseta">hol</p>
+                </div>
+                <div class="copiadoReves" id="copiadoReves"></div>
+            </div>
+
+            <div>
+                <h4 class="modifica mt-4 mb-4">Modifica a tu gusto</h4>
+                <div id="controles" class="justify-content-center d-flex flex-column card text-white mb-3 shadow">
+                    <label class="margenPersonalizado mt-4" for="tituloCamiseta">Título</label>
+                    <input class="margenPersonalizado form-control mt-4 mb-4 w-75" type="text" placeholder="Escribe un título..."
+                        id="tituloCamiseta">
+                    <div class="margenPersonalizado d-flex mb-4">
+                        <label class="me-2" for="negro">Negro</label>
+                        <input class="me-2 form-check-input ms-2" type="radio" name="color" id="negro" value="negro"
+                            checked>
+                        <label class="me-2" for="blanco">Blanco</label>
+                        <input class="form-check-input ms-2" type="radio" name="color" id="blanco" value="blanco">
+                    </div>
+                    <label class="margenPersonalizado" for="ejeX">Eje X</label>
+                    <input class="margenPersonalizado mb-4 w-75" type="range" name="ejeX" id="ejeX">
+                    <label class="margenPersonalizado" for="ejeY">Eje Y</label>
+                    <input class="margenPersonalizado  mb-4 w-75" type="range" name="ejeY" id="ejeY">
+                    <!-- <input class="btn btn-light mt-4  mb-4 w-75" type="button" value="Añadir" id="crear"> -->
+                </div>
+            </div>
+        </div>
+
+        <div id="fotos" class="contenedorFotos  d-flex shadow">
+            <img src="img/imagen1.png" id="jason" class="img-fluid" alt="">
+            <img src="img/imagen2.png" id="ghost" class="img-fluid" alt="">
+            <img src="img/imagen3.png" id="terrifier" class="img-fluid" alt="">
+            <img src="img/imagen4.png" id="freddy" class="img-fluid" alt="">
+        </div>
+    </main>
+</body>
+
+</html>

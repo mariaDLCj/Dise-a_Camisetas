@@ -27,7 +27,7 @@ function actualizarPosicion() {
 
 function color(){
     
-    let src = radioNegro.checked ? "img/black.png" : "img/white.png";
+    let src = radioNegro.checked ? "../img/black.png" : "../img/white.png";
     textoCamiseta.style.color = radioNegro.checked ? "white" : "black";
     fotoCamiseta.setAttribute("src",src);
 }

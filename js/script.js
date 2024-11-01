@@ -14,9 +14,14 @@ let radioNegro = document.getElementById("negro");
 
 // CREAR TEXTO ESCRIBE HASTA 20 CARACTERES
 function crearTexto() {
+    //LIMPIAR TEXTO ERROR
+    document.getElementById("error").innerHTML = "";
     let texto = tituloCamiseta.value; 
-    if(texto.length < 20){
+    if(texto.length < 10){
         textoCamiseta.innerHTML = texto; 
+    }else{
+        //TEXTO ERROR
+        document.getElementById("error").innerText="Máximo 10 caracteres.";
     }
 }
 
